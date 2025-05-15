@@ -3,7 +3,7 @@ name: Update Language Chart
 on:
   push:
   schedule:
-    - cron: '0 * * * *'  # every hour
+    - cron: '0 0,12 * * *'  
 
 jobs:
   build:
@@ -25,12 +25,12 @@ jobs:
 
       - name: Generate SVG
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  # your custom token if needed in script.js
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }} 
         run: node script.js
 
       - name: Commit and push SVG
         env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  # Use your PAT here
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
