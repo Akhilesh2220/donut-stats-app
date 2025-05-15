@@ -28,11 +28,11 @@ jobs:
 
       - name: Commit and push SVG
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  # Use your PAT here
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${PERSONAL_TOKEN}@github.com/${{ github.repository }}.git
           git add language-stats.svg
           git diff --cached --quiet || git commit -m "Update language stats chart"
           git push
