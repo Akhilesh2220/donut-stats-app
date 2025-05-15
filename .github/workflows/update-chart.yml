@@ -3,8 +3,7 @@ name: Update Language Chart
 on:
   push:
   schedule:
-    - cron: '0 0 * * *'  # every day at midnight UTC
-  workflow_dispatch:
+    - cron: '* * * * *'  # every day at midnight UTC
 
 jobs:
   build:
