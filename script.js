@@ -128,7 +128,7 @@ function generateDonutSVG(languages) {
   <title>GitHub Language Stats Donut Chart for ${USERNAME}</title>
   <g transform="translate(0,0)">
     ${paths.join('\n')}
-    <circle cx="${center}" cy="${center}" r="${radius - donutWidth}" fill="white" />
+    <circle cx="${center}" cy="${center}" r="${radius - donutWidth}" fill="transparent" />
   </g>
   <g transform="translate(${size + 20 * scale}, 0)">
     ${legendItems}
