@@ -117,7 +117,7 @@ function generateDonutSVG(languages) {
     const percentText = (lang.percentage * 100).toFixed(1) + '%';
     return `
       <circle cx="${10 * scale}" cy="${y - 5 * scale}" r="${8 * scale}" fill="${color}" />
-      <text x="${30 * scale}" y="${y}" font-family="sans-serif" font-size="${16 * scale}" fill="#666" dominant-baseline="middle">
+      <text x="${30 * scale}" y="${y}" font-family="sans-serif" font-size="${16 * scale}" fill="white" dominant-baseline="middle">
         ${lang.language} — ${percentText}
       </text>
     `;
