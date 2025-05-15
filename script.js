@@ -1,9 +1,8 @@
-
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.PERSONAL_TOKEN;
+const GITHUB_TOKEN = process.env.PERSONAL_TOKEN;
 
 const USERNAME = 'Akhilesh2220';
 
@@ -129,7 +128,7 @@ function generateDonutSVG(languages) {
   <title>GitHub Language Stats Donut Chart for ${USERNAME}</title>
   <g transform="translate(0,0)">
     ${paths.join('\n')}
-    <circle cx="${center}" cy="${center}" r="${radius - donutWidth}" fill="transparent" />
+    <circle cx="${center}" cy="${center}" r="${radius - donutWidth}" fill="white" />
   </g>
   <g transform="translate(${size + 20 * scale}, 0)">
     ${legendItems}
