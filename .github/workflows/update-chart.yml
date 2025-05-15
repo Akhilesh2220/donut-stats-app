@@ -3,11 +3,13 @@ name: Update Language Chart
 on:
   push:
   schedule:
-    - cron: '0 * * * *'  # every day at midnight UTC
+    - cron: '0 * * * *'  # every hour
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}  # pass the secret here
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -21,15 +23,12 @@ jobs:
         run: npm install
 
       - name: Generate SVG
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node script.js  # or the filename of your script
+        run: node script.js   # your script filename
 
       - name: Commit and push SVG
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add language-stats.svg
-          git commit -m "Update language stats chart" || echo "No changes"
+          git diff --cached --quiet || git commit -m "Update language stats chart"
           git push
-
