@@ -1,0 +1,51 @@
+
+<svg width="450" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub language stats donut chart">
+  <title>GitHub Language Stats Donut Chart for Akhilesh2220</title>
+  <g transform="translate(0,0)">
+    <path d="M 256.12377146901315 206.0155793435422 A 120 120 0 0 0 157.53486234351763 30.236792588607415 L 153.7674311717588 90.11839629430371 A 60 60 0 0 1 203.06188573450657 178.00778967177112 Z" fill="#005f73" />
+<path d="M 93.78753861539792 256.019616982352 A 120 120 0 0 0 252.39711311897224 212.56861213819917 L 201.19855655948612 181.28430606909959 A 60 60 0 0 1 121.89376930769896 203.009808491176 Z" fill="#0a9396" />
+<path d="M 31.542470459824898 130.8215304250171 A 120 120 0 0 0 87.24143423680434 252.28080183175456 L 118.62071711840217 201.14040091587728 A 60 60 0 0 1 90.77123522991245 140.41076521250855 Z" fill="#94d2bd" />
+<path d="M 78.91509849471592 53.32044281243289 A 120 120 0 0 0 32.98044540371403 123.4213649318321 L 91.49022270185702 136.71068246591605 A 60 60 0 0 1 114.45754924735796 101.66022140621644 Z" fill="#e9d8a6" />
+<path d="M 129.7230141005316 31.725557101997893 A 120 120 0 0 0 85.12592793370668 49.04775993799157 L 117.56296396685335 99.52387996899579 A 60 60 0 0 1 139.8615070502658 90.86277855099894 Z" fill="#ee9b00" />
+<path d="M 149.99999999999986 30 A 120 120 0 0 0 137.18953981697297 30.685742218714367 L 143.59476990848648 90.34287110935719 A 60 60 0 0 1 149.99999999999994 90 Z" fill="#ca6702" />
+    <circle cx="150" cy="150" r="60" fill="white" />
+  </g>
+  <g transform="translate(315, 0)">
+    
+      <circle cx="7.5" cy="93.75" r="6" fill="#005f73" />
+      <text x="22.5" y="97.5" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        HTML — 32.7%
+      </text>
+    
+
+      <circle cx="7.5" cy="116.25" r="6" fill="#0a9396" />
+      <text x="22.5" y="120" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        Python — 25.0%
+      </text>
+    
+
+      <circle cx="7.5" cy="138.75" r="6" fill="#94d2bd" />
+      <text x="22.5" y="142.5" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        CSS — 19.8%
+      </text>
+    
+
+      <circle cx="7.5" cy="161.25" r="6" fill="#e9d8a6" />
+      <text x="22.5" y="165" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        Go — 12.4%
+      </text>
+    
+
+      <circle cx="7.5" cy="183.75" r="6" fill="#ee9b00" />
+      <text x="22.5" y="187.5" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        JavaScript — 7.4%
+      </text>
+    
+
+      <circle cx="7.5" cy="206.25" r="6" fill="#ca6702" />
+      <text x="22.5" y="210" font-family="sans-serif" font-size="12" fill="#333" dominant-baseline="middle">
+        Shell — 2.7%
+      </text>
+    
+  </g>
+</svg>
