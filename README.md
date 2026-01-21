@@ -26,5 +26,5 @@ Generates an auto-updating donut chart of your GitHub language usage statistics.
 Edit `script.js` to:
 - Change colors in the `colors` array
 - Adjust chart dimensions (size/scale)
-- Modify language tags positioning
+- Modify language tags positioning.
 
